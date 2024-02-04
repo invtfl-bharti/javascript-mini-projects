@@ -10,6 +10,8 @@
 </head>
 
 <body>
+
+
     <div class="container">
 
         <div class="to-do-list">
@@ -19,41 +21,21 @@
             </div>
 
             <div class="add-text">
-                <input type="text" placeholder="Add your text">
+                <input type="text" id="input-box" placeholder="Add your text">
 
-                <button class="add">Add</button>
+                <button class="add" onclick="addTask()">Add</button>
             </div>
 
             <ul id="list-container">
-                <li>
-                    <input type="checkbox" class="radio_item" value="" name="item" id="radio1">
-                    <label class="label_item" for="radio1">
-                        <img src="./images/checked.png" class="checked-img">
-                        <img src="./images/unchecked.png" alt="" class="unchecked-img">
+                <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li>
 
-                    </label>
-                    <p>Task 1</p>
-                </li>
-                <li>
-                    <input type="checkbox" class="radio_item" value="" name="item" id="radio2">
-                    <label class="label_item" for="radio2">
-                        <img src="./images/checked.png" class="checked-img">
-                        <img src="./images/unchecked.png" alt="" class="unchecked-img">
 
-                    </label>
-                    <p>Task 2</p>
-                </li>
-                <li>
-                    <input type="checkbox" class="radio_item" value="" name="item" id="radio3">
-                    <label class="label_item" for="radio3">
-                        <img src="./images/checked.png" class="checked-img">
-                        <img src="./images/unchecked.png" alt="" class="unchecked-img">
-
-                    </label>
-                    <p>Task 3</p>
-                </li>
             </ul>
         </div>
+
+        <script src="./script.js"></script>
 </body>
 
 </html>
