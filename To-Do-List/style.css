@@ -7,7 +7,7 @@
 .container {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(125deg, #153677, #4e085f);
+    background: linear-gradient(to right, rgb(41, 184, 240), rgb(54, 128, 224));
     position: relative;
 }
 
@@ -149,6 +149,22 @@ ul li.checked {
     text-decoration: line-through;
 }
 
-ul li.checked::before{
+ul li.checked::before {
     background-image: url(./images/checked.png);
+}
+
+ul li span {
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    left: 90%;
+    font-size: 24px;
+    top: -6px;
+    color: #555;
+    padding-left: 0.5rem;
+}
+
+ul li span:hover {
+    border-radius: 50%;
+    background-color: rgb(222, 209, 209);
 }
