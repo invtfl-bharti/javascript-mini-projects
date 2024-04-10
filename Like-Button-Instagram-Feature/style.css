@@ -38,11 +38,13 @@ body {
 
 .container>i {
     position: absolute;
-    font-size: 4.5rem;
-    color: white;
+    font-size: 3.5rem;
+    color:white;
     transform: translate(-50%, -50%) scale(0);
     opacity: 0;
     transition: transform ease 0.5s;
+    top: 40%;
+    left: 52%;
 
 
 }
