@@ -5,7 +5,13 @@
 }
 
 body {
+    /* height: auto;
+    width: 100%; */
     background-color: #081022;
+    color: white;
+}
+
+.skip p:hover {
     color: white;
 }
 
@@ -15,7 +21,7 @@ body {
     border-radius: 3%;
     padding: 1.5rem;
     height: 40rem;
-    width: 45%;
+    width: 42%;
     position: relative;
     left: 30%;
     top: 3rem;
@@ -49,6 +55,11 @@ body {
     left: 10%;
 }
 
+.img-front img {
+    object-fit: cover;
+    background-size: cover;
+}
+
 .para1 {
     height: 30%;
     width: 60%;
@@ -71,30 +82,74 @@ body {
 }
 
 .btn {
+    color: white;
     position: absolute;
     top: 90%;
     left: 30%;
-    height: 42px;
+    height: 45px;
     width: 226px;
     font-size: 20.33px;
     background-image: linear-gradient(to right, #1DB7E8, #223FD6, #1DB7E8);
     border-radius: 15px;
 }
-#c1{
-    height: 10px;
-    width: 13px;
+
+.btn:hover {
+    background-image: linear-gradient(to right, #223FD6, #1DB7E8, #223FD6);
+    border: 2px solid white;
+}
+
+#c1 {
+    height: 8px;
+    width: 10px;
     border-radius: 50%;
     background-color: #4E8DEB;
 }
-#c2{
-    height: 10px;
-    width: 13px;
+
+#c2 {
+    height: 8px;
+    width: 10px;
     border-radius: 50%;
-    background-color: #4E8DEB;
+    background-color: #46ACCC;
 }
-#c3{
-    height: 10px;
-    width: 13px;
+
+#c3 {
+    height: 8px;
+    width: 10px;
     border-radius: 50%;
-    background-color: #4E8DEB;
+    background-color: #46ACCC;
+}
+
+.swap {
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.main2 {
+    border: 2px solid white;
+    border-radius: 3%;
+    padding: 1.5rem;
+    height: 40rem;
+    width: 42%;
+    position: relative;
+    left: 30%;
+    top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gen-pass{
+    height: 3.5rem;
+    width:20rem;
+    background-color: #06285C;
+}
+#pass{
+    text-align: center;
+
 }
