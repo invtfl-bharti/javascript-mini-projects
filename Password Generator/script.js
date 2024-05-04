@@ -13,11 +13,11 @@ skip.addEventListener('click', function () {
 main.scrollIntoView({ behavior: 'smooth' });
 })
 
-let copy = document.querySelector('.copy');
-let copyicon = document.querySelector('.bx bx-copy')
+let copyicon = document.querySelector('.bx-copy');
 
-document.getElementById('.copyicon').addEventListener('click', function () {
-    var copyText = document.getElementById('#copyText');
+copyicon.addEventListener('click', function () {
+    var copyText = document.getElementById('copyText');
     copyText.select();
+    document.execCommand('copy');
     alert('Copied to clipboard: ' + copyText.value);
-})
+});

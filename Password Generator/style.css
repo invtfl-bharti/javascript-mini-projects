@@ -83,7 +83,7 @@ body {
     color: white;
     position: absolute;
     top: 90%;
-    left: 25%;
+    left: 30%;
     height: 45px;
     width: 226px;
     font-size: 20.33px;
@@ -309,7 +309,7 @@ input:checked+.slider:before {
     left: 20%;
 }
 .title1{
-    margin-top: 62%;
+    margin-top: 48%;
     margin-left: 18%;
     color: #869395;
 
@@ -319,7 +319,7 @@ input:checked+.slider:before {
     color: white;
         position: absolute;
         top: 85%;
-        left: 25%;
+        left: 30%;
         height: 45px;
         width: 226px;
         font-size: 20.33px;
