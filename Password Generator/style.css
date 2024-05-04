@@ -83,7 +83,7 @@ body {
     color: white;
     position: absolute;
     top: 90%;
-    left: 30%;
+    left: 25%;
     height: 45px;
     width: 226px;
     font-size: 20.33px;
@@ -147,14 +147,23 @@ body {
 
 .gen {
     height: 10%;
-    width: 50%;
+    width: 55%;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 20%;
-    border: 2px solid white;
     background-color: #06285C;
     border-radius: 6px;
+    padding: 1rem 1.5rem 1rem 1rem;
 
+}
+
+.gen input {
+    background-color: #06285C;
+    border: none;
+    height: 8%;
+    width: 80%;
+    padding: 1rem 1.5rem 1rem 1rem;
+    margin-left: 10%;
 }
 
 .gen p {
@@ -165,7 +174,7 @@ body {
 .title p {
     position: absolute;
     left: 35%;
-    top: 30%;
+    top: 25%;
     color: #869395;
 }
 
@@ -173,30 +182,32 @@ body {
     font-size: 1rem;
     color: #869395;
     position: absolute;
-    top: 37%;
+    top: 30%;
     left: 20%;
 
 }
 
 .len {
-    height: 10%;
-    width: 50%;
-    top: 40%;
+    height: 8%;
+    width: 55%;
+    top: 34%;
     left: 20%;
-    border: 2px solid white;
     background-color: #06285C;
     border-radius: 6px;
     position: absolute;
 }
+
 .len {
     text-align: center;
     padding: 0.2rem;
 }
-.val{
+
+.val {
     display: flex;
     justify-content: space-around;
 
 }
+
 /* Style the switch container */
 .switch {
     position: relative;
@@ -250,10 +261,63 @@ input:checked+.slider:before {
     transform: translateX(26px);
 }
 
-.rules{
-    
-    border: 2px solid white;
+
+.rule1 {
+    background-color: #06285C;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    width: 55%;
+    height: 8%;
+    border-radius: 6px;
+    padding: 1rem 1rem 1rem;
+    position: absolute;
+    top: 50%;
+    left: 20%;
 }
+.rule2 {
+    background-color: #06285C;
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    height: 8%;
+    border-radius: 6px;
+    padding: 1rem 1rem 1rem;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+}
+.rule3 {
+    background-color: #06285C;
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    height: 8%;
+    border-radius: 6px;
+    padding: 1rem 1rem 1rem;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+}
+.title1{
+    margin-top: 62%;
+    margin-left: 18%;
+    color: #869395;
+
+}
+
+.btn2{
+    color: white;
+        position: absolute;
+        top: 85%;
+        left: 25%;
+        height: 45px;
+        width: 226px;
+        font-size: 20.33px;
+        background-image: linear-gradient(to right, #1DB7E8, #223FD6, #1DB7E8);
+        border-radius: 15px;
+}
+.btn2:hover{
+    background-image: linear-gradient(to right, #223FD6, #1DB7E8, #223FD6);
+        border: 2px solid white;
+}
+    
