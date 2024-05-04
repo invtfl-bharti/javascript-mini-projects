@@ -157,6 +157,10 @@ body {
 
 }
 
+input[type="password"]{
+    color: whitesmoke;
+}
+
 .gen input {
     background-color: #06285C;
     border: none;
@@ -261,7 +265,13 @@ input:checked+.slider:before {
     transform: translateX(26px);
 }
 
-
+/* copy icon */
+.copy{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 18%;
+    left: 67%;
+}
 .rule1 {
     background-color: #06285C;
     display: flex;
