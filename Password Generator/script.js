@@ -21,3 +21,15 @@ copyicon.addEventListener('click', function () {
     document.execCommand('copy');
     alert('Copied to clipboard: ' + copyText.value);
 });
+
+// slider using js
+const slider = document.querySelector('[data-lengthSlider]');
+const inputValue = document.querySelector('#inputValue');
+let passwordLength = 0;
+
+
+slider.addEventListener("input", (event) => {
+    passwordLength = event.target.value;
+
+    inputValue.innerText = passwordLength;
+})

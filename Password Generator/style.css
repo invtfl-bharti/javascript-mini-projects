@@ -83,7 +83,7 @@ body {
     color: white;
     position: absolute;
     top: 90%;
-    left: 30%;
+    left: 27%;
     height: 45px;
     width: 226px;
     font-size: 20.33px;
@@ -319,7 +319,7 @@ input:checked+.slider:before {
     color: white;
         position: absolute;
         top: 85%;
-        left: 30%;
+        left: 25%;
         height: 45px;
         width: 226px;
         font-size: 20.33px;
