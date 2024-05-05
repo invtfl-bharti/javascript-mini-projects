@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #081022;
     color: white;
@@ -83,7 +87,7 @@ body {
     color: white;
     position: absolute;
     top: 90%;
-    left: 27%;
+    left: 29%;
     height: 45px;
     width: 226px;
     font-size: 20.33px;
@@ -137,6 +141,7 @@ body {
     position: relative;
     left: 30%;
     top: 10rem;
+    display: none;
 }
 
 .next-pg {
@@ -157,7 +162,7 @@ body {
 
 }
 
-input[type="password"]{
+input[type="password"] {
     color: whitesmoke;
 }
 
@@ -182,7 +187,7 @@ input[type="password"]{
     color: #869395;
 }
 
-.h4 {
+.lenheading {
     font-size: 1rem;
     color: #869395;
     position: absolute;
@@ -266,12 +271,13 @@ input:checked+.slider:before {
 }
 
 /* copy icon */
-.copy{
+.copy {
     font-size: 1.5rem;
     position: absolute;
     top: 18%;
     left: 67%;
 }
+
 .rule1 {
     background-color: #06285C;
     display: flex;
@@ -284,6 +290,7 @@ input:checked+.slider:before {
     top: 50%;
     left: 20%;
 }
+
 .rule2 {
     background-color: #06285C;
     display: flex;
@@ -296,6 +303,7 @@ input:checked+.slider:before {
     top: 60%;
     left: 20%;
 }
+
 .rule3 {
     background-color: #06285C;
     display: flex;
@@ -308,26 +316,41 @@ input:checked+.slider:before {
     top: 70%;
     left: 20%;
 }
-.title1{
+
+.title1 {
     margin-top: 48%;
     margin-left: 18%;
     color: #869395;
 
 }
 
-.btn2{
+.btn2 {
     color: white;
-        position: absolute;
-        top: 85%;
-        left: 25%;
-        height: 45px;
-        width: 226px;
-        font-size: 20.33px;
-        background-image: linear-gradient(to right, #1DB7E8, #223FD6, #1DB7E8);
-        border-radius: 15px;
+    position: absolute;
+    top: 85%;
+    left: 28%;
+    height: 45px;
+    width: 226px;
+    font-size: 20.33px;
+    background-image: linear-gradient(to right, #1DB7E8, #223FD6, #1DB7E8);
+    border-radius: 15px;
+
 }
-.btn2:hover{
+
+.btn2:hover {
     background-image: linear-gradient(to right, #223FD6, #1DB7E8, #223FD6);
-        border: 2px solid white;
+    border: 2px solid white;
 }
-    
+
+/* Strength Value */
+.strengthValue{
+    height: 5%;
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+}
+.strengthValue i{
+    border-radius: 50%;
+    background-color: #869395;
+}

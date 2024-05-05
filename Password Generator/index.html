@@ -16,11 +16,12 @@
                 <!-- Main Heading -->
                 <p class="h1">Password Generator</p>
             </div>
-            <!-- SKIP Method -->
+            <!-- SKIP Button Method -->
             <div class="skip">
                 <p>SKIP</p>
             </div>
         </div>
+        <!-- Image at the front page -->
         <div class="div.main-text">
             <div class="img-front">
                 <img src="./images/Password Generator.png" alt="" srcset="">
@@ -45,61 +46,78 @@
 
                 </div>
             </div>
+            <!-- Button to get started or to go to the next section -->
             <button class="btn">GET STARTED</button>
         </div>
     </section>
     <!-- main function which will generate password -->
     <section class="main2">
         <div class="next-pg">
+            <!-- Heading section of the next div -->
             <div class="heading">
                 <p class="h1">Password Generator</p>
             </div>
+            <!-- Title to the generate password box -->
             <div class="genpass">
                 <div class="title">
                     <p>generate password</p>
                 </div>
+                <!-- Input for the password -->
                 <div class="gen">
-                    <input type="password" name="" placeholder="PASSWORD" id="copyText">
+                    <input type="password" name="" placeholder="PASSWORD" id="Password">
                 </div>
+                <!-- Copy icon --> 
                 <div class="copy">
-                    
                     <i class='bx bx-copy' style='color:#ffffff'></i>
                 </div>
             </div>
-            <p class="h4">Length is</p>
+            <!-- Strength of the password -->
+            <div class="lenValue">
+                <div class="strengthValue">
+                    <i class='bx bx-circle' style='color:#ffffff'></i>
+                </div>
+                <!-- Length of the password -->
+                <div class="lenheading">Length is</div>
+            </div>
             <div class="len">
                 <div class="val">
-                    <p id="inputValue">0</p> 
+                    <!-- Value it will display when the slider will inrease or decrease -->
+                    <p id="length">0</p>
 
                 </div>
-                <input type="range" min="0" max="32" , step="1" id="" data-lengthSlider>
+                <!-- Range of the slider -->
+                <input type="range" min="0" max="32" , step="1" data-lengthSlider>
             </div>
             <div class="rules">
                 <div class="title1">
                     <p>Settings</p>
                 </div>
+                <!-- Includes Number Div that the password includes numbers -->
                 <div class="rule1">
-                    <p class="p1">Include Numbers</p>
+                    <p class="p p1">Include Numbers</p>
                     <label class="switch">
                         <input type="checkbox">
                         <span class="slider round"></span>
                     </label>
                 </div>
+                <!-- Letters div includes letters in the password -->
                 <div class="rule2">
-                    <p class="p1">Include letters</p>
+                    <p class="p p2">Include letters</p>
                     <label class="switch">
                         <input type="checkbox">
                         <span class="slider round"></span>
                     </label>
                 </div>
+                <!-- Symbols div -->
                 <div class="rule3">
-                    <p class="p1">Include Symbols</p>
+                    <p class="p p3">Include Symbols</p>
                     <label class="switch">
                         <input type="checkbox">
                         <span class="slider round"></span>
                     </label>
                 </div>
             </div>
+            <!-- Last button to generate password -->
             <button class="btn2">GET STARTED</button>
 
         </div>
