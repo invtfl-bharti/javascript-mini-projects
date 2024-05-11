@@ -6,23 +6,16 @@ let passwordgen = document.querySelector('#Password');
 let inputSlider = document.querySelector('[data-lengthSlider]');
 let skip = document.querySelector('.skip');
 let main = document.querySelector('.main');
-let uppercaseCheck = document.querySelector('.p2');
-let numbersCheck = document.querySelector('.p1');
-let lowercaseCheck = document.querySelector('.p3');
-let symbolsCheck = document.querySelector('.p4');
+let lowercaseCheck = document.querySelector('.rule3 input[type="checkbox"]');
+let uppercaseCheck = document.querySelector('.rule2 input[type="checkbox"]');
+let numbersCheck = document.querySelector('.rule1 input[type="checkbox"]');
+let symbolsCheck = document.querySelector('.rule4 input[type="checkbox"]');
 let indicator = document.querySelector('.bx-circle');
 let generateButton = document.querySelector('.btn2');
 let allSliderButton = document.querySelector('p');
 let genPass = document.querySelector('.btn2');
 
-
-
-
-
-
-
-
-
+// Event listeners for buttons and actions
 btn.addEventListener('click', function () {
     main2.style.display = "block";
     main2.scrollIntoView({ behavior: 'smooth' });
@@ -34,8 +27,7 @@ copyicon.addEventListener('click', function () {
         copyText.select();
         document.execCommand('copy');
         alert('Copied to clipboard: ' + copyText.value);
-    }
-     else {
+    } else {
         alert('Error: Input field not found!');
     }
 });
@@ -43,32 +35,27 @@ copyicon.addEventListener('click', function () {
 skip.addEventListener('click', function () {
     main.scrollIntoView({ behavior: 'smooth' });
 });
-// Copying to clipboard
-// Slider using JavaScript
-const slider = document.querySelector('[data-lengthSlider]');
-// Corrected selector for ID
-// slider.addEventListener("input", (event) => {
-//     const passwordLength = event.target.value; // Declare passwordLength using const
-    // length.innerText = passwordLength; // Update the text content of the <p> element
-// });
-inputSlider.value = 0;
 
+// Slider initialization and event handling
+inputSlider.value = 0;
 inputSlider.oninput = (() => {
     let value = inputSlider.value;
     sliderValue.textContent = value;
 });
+
+// Characters for generating password
 let allNumber = "0123456789";
 let lowercase = "abcdefghijklmnopqrstuvwxyz";
 let uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let symbols = " ~`!@#$%^&*()_-+={[}]|:;<,>.?/";
-//  Function to generate password
 
+// Event listener for password generation button
 genPass.addEventListener('click', () => {
-    // Call the generatePassword function and assign the generated password to the passwordgen element
     passwordgen.value = generatePassword(inputSlider.value);
 });
 
-function generatePassword() {
+// Function to generate random password based on selected criteria
+function generatePassword(length) {
     let genPassword = "";
     let allChars = "";
     allChars += lowercaseCheck.checked ? lowercase : "";
@@ -76,6 +63,13 @@ function generatePassword() {
     allChars += numbersCheck.checked ? allNumber : "";
     allChars += symbolsCheck.checked ? symbols : "";
 
-    genPassword = uppercase.charAt(Math.floor(Math.random() * uppercase.length ));
+    if (allChars == "" || allChars.length == 0) {
+        return genPassword;
+    }
+
+    for (let i = 0; i < length; i++) {
+        genPassword += allChars.charAt(Math.floor(Math.random() * allChars.length));
+    }
+
     return genPassword;
 }
