@@ -64,7 +64,7 @@
                 </div>
                 <!-- Input for the password -->
                 <div class="gen">
-                    <input type="password" name="" placeholder="PASSWORD" id="Password">
+                    <input type="text" name="" placeholder="PASSWORD" id="Password">
                 </div>
                 <!-- Copy icon --> 
                 <div class="copy">
@@ -82,11 +82,11 @@
             <div class="len">
                 <div class="val">
                     <!-- Value it will display when the slider will inrease or decrease -->
-                    <p id="length">0</p>
+                    <p id="sliderValue">0</p>
 
                 </div>
                 <!-- Range of the slider -->
-                <input type="range" min="0" max="32" , step="1" data-lengthSlider>
+                <input type="range" min="0" max="32" , step="0" data-lengthSlider>
             </div>
             <div class="rules">
                 <div class="title1">
@@ -102,15 +102,22 @@
                 </div>
                 <!-- Letters div includes letters in the password -->
                 <div class="rule2">
-                    <p class="p p2">Include letters</p>
+                    <p class="p p2">Include uppercase letters</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="rule3">
+                    <p class="p p3">Include lowercase letters</p>
                     <label class="switch">
                         <input type="checkbox">
                         <span class="slider round"></span>
                     </label>
                 </div>
                 <!-- Symbols div -->
-                <div class="rule3">
-                    <p class="p p3">Include Symbols</p>
+                <div class="rule4">
+                    <p class="p p4">Include Symbols</p>
                     <label class="switch">
                         <input type="checkbox">
                         <span class="slider round"></span>

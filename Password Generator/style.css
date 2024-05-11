@@ -316,6 +316,18 @@ input:checked+.slider:before {
     top: 70%;
     left: 20%;
 }
+.rule4 {
+    background-color: #06285C;
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    height: 8%;
+    border-radius: 6px;
+    padding: 1rem 1rem 1rem;
+    position: absolute;
+    top: 80%;
+    left: 20%;
+}
 
 .title1 {
     margin-top: 48%;
@@ -327,7 +339,7 @@ input:checked+.slider:before {
 .btn2 {
     color: white;
     position: absolute;
-    top: 85%;
+    top: 90%;
     left: 28%;
     height: 45px;
     width: 226px;
@@ -353,4 +365,9 @@ input:checked+.slider:before {
 .strengthValue i{
     border-radius: 50%;
     background-color: #869395;
+}
+
+.gen input{
+    color: white;
+    font-size: 1.5rem;
 }
