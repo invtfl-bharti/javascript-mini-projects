@@ -92,10 +92,10 @@ function generatePassword(length) {
 // Strength color
 inputSlider.addEventListener('input', () => {
     if (inputSlider.value < 10) {
-        strength.style.backgroundColor = 'yellow';
+        strength.style.backgroundColor = 'red';
     }
     else  if (inputSlider.value >= 11 && inputSlider.value <= 20) {
-        strength.style.backgroundColor = 'orange';
+        strength.style.backgroundColor = 'yellow';
     }
     else if(inputSlider.value >= 21 && inputSlider.value <= 32){
         strength.style.backgroundColor = 'green';
