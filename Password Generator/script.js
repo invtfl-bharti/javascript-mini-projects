@@ -14,6 +14,7 @@ let indicator = document.querySelector('.bx-circle');
 let generateButton = document.querySelector('.btn2');
 let allSliderButton = document.querySelector('p');
 let genPass = document.querySelector('.btn2');
+let strength = document.querySelector('.strengthValue');
 
 // Event listeners for buttons and actions
 btn.addEventListener('click', function () {
@@ -55,6 +56,7 @@ genPass.addEventListener('click', () => {
 });
 
 // Function to generate random password based on selected criteria
+// Random password generator function
 function generatePassword(length) {
     let genPassword = "";
     let allChars = "";
@@ -72,4 +74,30 @@ function generatePassword(length) {
     }
 
     return genPassword;
+    let color;
+    if (length > 30) {
+        strength.style.color = 'green';
+    }
+    else if (length > 20) {
+        strength.style.color = 'orange';
+    }
+    else {
+        strength.style.color = 'yellow';
+    }
+    return genPassword;
 }
+
+
+
+// Strength color
+inputSlider.addEventListener('input', () => {
+    if (inputSlider.value < 10) {
+        strength.style.backgroundColor = 'yellow';
+    }
+    else  if (inputSlider.value >= 11 && inputSlider.value <= 20) {
+        strength.style.backgroundColor = 'orange';
+    }
+    else if(inputSlider.value >= 21 && inputSlider.value <= 32){
+        strength.style.backgroundColor = 'green';
+    }
+});

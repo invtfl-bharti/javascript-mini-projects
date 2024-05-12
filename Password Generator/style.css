@@ -362,9 +362,11 @@ input:checked+.slider:before {
     top: 30%;
     left: 70%;
 }
-.strengthValue i{
+.strengthValue {
+    background-color: white;
+    height: 1rem;
+    width: 1rem;
     border-radius: 50%;
-    background-color: #869395;
 }
 
 .gen input{
