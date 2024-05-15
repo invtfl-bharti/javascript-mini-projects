@@ -1,27 +1,50 @@
-var clutter = "";
+let clutter = "";
+let newhit = 0;
 
-for (var i = 1; i <= 140; i++) {
-    var num = Math.floor(Math.random() * 10);
-      clutter += `<div class="bubbles">${num}</div>`
-}
-document.querySelector("#bubbles-sec").innerHTML = clutter;
-
+// Generate initial bubbles
 function makeBubble() {
-
+    clutter = "";
+    for (let i = 1; i <= 140; i++) {
+        let num = Math.floor(Math.random() * 10);
+        clutter += `<div class="bubbles">${num}</div>`;
+    }
+    document.querySelector("#bubbles-sec").innerHTML = clutter;
 }
+
 // Function Timer
-var timer = 60;
+let timer = 60;
 function runTimer() {
-    var timerInterval = setInterval(function () {
-        if (timer >= 0) {
+    let timerInterval = setInterval(function () {
+        if (timer > 0) {
             timer--;
             document.querySelector("#timer-value").textContent = timer;
+        } else {
+            clearInterval(timerInterval);
         }
-        else {
-            clearInterval(timerint);
-        }
-        
     }, 1000);
 }
-runTimer();
+
+let score = 0;
+function increaseScore() {
+    score += 10;
+    document.querySelector("#score-value").textContent = score;
+}
+
+function newHit() {
+    newhit = Math.floor(Math.random() * 10);
+    document.querySelector("#hit").textContent = newhit;
+}
+
+document.querySelector("#bubbles-sec").addEventListener("click", function (dets) {
+    let clickedNum = Number(dets.target.textContent);
+    if (clickedNum == newhit) {
+        increaseScore();
+        makeBubble();
+        newHit();
+    }
+});
+
+// Initial function calls
 makeBubble();
+newHit();
+runTimer();
