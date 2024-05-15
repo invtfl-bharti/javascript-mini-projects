@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1{
+   text-align: center;
+   color: black;
+}
 
 html,
 body {
@@ -18,11 +22,12 @@ body {
     /* border: 2px solid black; */
     /* padding: 1rem; */
     position: relative;
-    top: 5%;
+    background-color: white;
+    top:5%;
     left: 20%;
-    height: 90%;
+    height: 88%;
     width: 60%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(37, 147, 232, 0.977) 0px 10px 20px, rgba(69, 200, 252, 0.755) 0px 6px 6px;
 }
 h2{
     color: white;
@@ -57,4 +62,30 @@ h2{
     margin-left: 14%;
     width: 3.5rem;
 
+}
+#bubbles-sec{
+    flex-wrap: wrap;
+    height: 90%;
+    width: 100%;
+    border-radius: 5.8%;
+    background-color: whitesmoke;
+    display: flex;
+    gap: 10px;
+    padding: 1rem;
+}
+.bubbles{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(6, 69, 138) ;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+
+}
+.bubbles:hover{
+    background-color: rgb(5, 42, 86);
+    cursor: pointer;
 }
