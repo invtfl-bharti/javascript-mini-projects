@@ -7,7 +7,7 @@ let newhit = 0;
 // Generate initial bubbles
 function makeBubble() {
     clutter = "";
-    for (let i = 1; i <= 140; i++) {
+    for (let i = 1; i <= 108; i++) {
         let num = Math.floor(Math.random() * 10);
         clutter += `<div class="bubbles">${num}</div>`;
     }
@@ -23,7 +23,7 @@ function runTimer() {
             document.querySelector("#timer-value").textContent = timer;
         } else {
             clearInterval(timerInterval);
-            document.querySelector("#bubbles-sec").innerHTML = `<h1>Game Over</h1>`
+            document.querySelector("#bubbles-sec").innerHTML = `<h1>Game Over</h1>`;
         }
     }, 1000);
 }
