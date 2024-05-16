@@ -1,3 +1,6 @@
+// generate bubbles
+
+
 let clutter = "";
 let newhit = 0;
 
@@ -14,12 +17,13 @@ function makeBubble() {
 // Function Timer
 let timer = 60;
 function runTimer() {
-    let timerInterval = setInterval(function () {
+    let timerInterval = setInterval(function() {
         if (timer > 0) {
             timer--;
             document.querySelector("#timer-value").textContent = timer;
         } else {
             clearInterval(timerInterval);
+            document.querySelector("#bubbles-sec").innerHTML = `<h1>Game Over</h1>`
         }
     }, 1000);
 }
@@ -43,6 +47,8 @@ document.querySelector("#bubbles-sec").addEventListener("click", function (dets)
         newHit();
     }
 });
+
+
 
 // Initial function calls
 makeBubble();
